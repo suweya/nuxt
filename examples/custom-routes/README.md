@@ -1,0 +1,1 @@
+- validate 方法 https://zh.nuxtjs.org/api/pages-validate#validate-方法

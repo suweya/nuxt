@@ -1,0 +1,12 @@
+{
+  "name": "nuxt-custom-routes",
+  "dependencies": {
+    "nuxt": "latest",
+    "axios": "latest"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  }
+}
