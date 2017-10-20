@@ -10,13 +10,13 @@
           <nuxt-link class="Header__Link" :to="path('/about')" exact>
             {{ $t('links.about') }}
           </nuxt-link>
-          <nuxt-link class="Header__Link" v-if="$i18n.locale !== 'fr'" :to="`/fr` + $route.fullPath" active-class="none" exact>
+          <nuxt-link class="Header__Link" v-if="$i18n.locale !== 'fr'" :to="`/fr` + $route.fullPath.replace(/^\/zh/, '')" active-class="none" exact>
             {{ $t('links.french') }}
           </nuxt-link>
           <nuxt-link class="Header__Link" v-if="$i18n.locale !== 'en'" :to="$route.fullPath.replace(/^\/[^\/]+/, '')" active-class="none" exact>
             {{ $t('links.english') }}
           </nuxt-link>
-          <nuxt-link class="Header__Link" v-if="$i18n.locale !== 'zh'" :to="`/zh` + $route.fullPath" active-class="none" exact>
+          <nuxt-link class="Header__Link" v-if="$i18n.locale !== 'zh'" :to="`/zh` + $route.fullPath.replace(/^\/fr/, '')" active-class="none" exact>
             {{ $t('links.chinese') }}
           </nuxt-link>
         </nav>
