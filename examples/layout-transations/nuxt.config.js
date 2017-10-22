@@ -3,8 +3,8 @@ module.exports = {
     vendor: ['axios']
   },
   css: ['~/assets/main.css'],
-  layoutTransition: {
-    name: 'layout',
+  transition: {
+    name: 'bounce',
     mode: 'out-in'
   }
 }
