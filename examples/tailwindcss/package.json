@@ -1,0 +1,16 @@
+{
+  "name": "nuxt-tailwindcss",
+  "description": "Nuxt.js with Tailwind CSS",
+  "dependencies": {
+    "nuxt": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "tailwindcss": "latest"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  }
+}
